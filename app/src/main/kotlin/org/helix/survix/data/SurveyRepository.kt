@@ -53,7 +53,11 @@ class SurveyRepository(dir: File, private val scope: CoroutineScope) {
         scope.launch {
             val loaded = withContext(disk) { store.loadAll() }
             _unreadableFiles.value = loaded.unreadable.size
-            _surveys.value = loaded.surveys
+            // Keep anything created while the load was running (an example, an import).
+            _surveys.update { early ->
+                val created = early.orEmpty()
+                (created + loaded.surveys.filterNot { s -> created.any { it.id == s.id } }).sortedByDescending { it.updatedAt }
+            }
         }
     }
 

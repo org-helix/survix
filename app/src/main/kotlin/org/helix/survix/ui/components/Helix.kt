@@ -147,8 +147,16 @@ fun HelixField(
                 )
                 .semantics { if (label != null) contentDescription = label },
             textStyle = textStyle,
-            placeholder = placeholder?.let { { Text(it, style = textStyle, color = c.muted) } },
-            suffix = suffix?.let { { Text(it, color = c.muted) } },
+            placeholder = if (placeholder != null) {
+                { Text(placeholder, style = textStyle, color = c.muted) }
+            } else {
+                null
+            },
+            suffix = if (suffix != null) {
+                { Text(suffix, color = c.muted) }
+            } else {
+                null
+            },
             singleLine = singleLine,
             minLines = minLines,
             isError = error != null,

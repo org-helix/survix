@@ -56,14 +56,17 @@
     <string name="survey_actions">Actions pour « %1$s »</string>
     <plurals name="question_count">
         <item quantity="one">%d question</item>
+        <item quantity="many">%d questions</item>
         <item quantity="other">%d questions</item>
     </plurals>
     <plurals name="section_count">
         <item quantity="one">%d section</item>
+        <item quantity="many">%d sections</item>
         <item quantity="other">%d sections</item>
     </plurals>
     <plurals name="survey_count">
         <item quantity="one">%d sondage</item>
+        <item quantity="many">%d sondages</item>
         <item quantity="other">%d sondages</item>
     </plurals>
     <string name="unreadable_files">Certains fichiers enregistrés sont illisibles et ont été ignorés.</string>
@@ -84,6 +87,7 @@
     <string name="msg_exported">Fichier enregistré</string>
     <plurals name="msg_imported">
         <item quantity="one">%d sondage importé</item>
+        <item quantity="many">%d sondages importés</item>
         <item quantity="other">%d sondages importés</item>
     </plurals>
     <string name="msg_example_added">Exemple ajouté</string>
@@ -192,6 +196,7 @@
     <string name="preview_all_good">Tout est rempli correctement.</string>
     <plurals name="preview_missing">
         <item quantity="one">%d réponse à compléter</item>
+        <item quantity="many">%d réponses à compléter</item>
         <item quantity="other">%d réponses à compléter</item>
     </plurals>
     <string name="preview_required_error">Cette question est obligatoire.</string>
