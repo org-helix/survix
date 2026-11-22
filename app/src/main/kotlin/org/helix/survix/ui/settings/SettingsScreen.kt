@@ -1,6 +1,7 @@
 package org.helix.survix.ui.settings
 
 import android.content.ActivityNotFoundException
+import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import androidx.compose.foundation.layout.Arrangement
@@ -11,6 +12,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
@@ -26,8 +28,10 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarDefaults
+import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.pluralStringResource
@@ -49,6 +53,9 @@ import org.helix.survix.ui.components.HelixMark
 import org.helix.survix.ui.theme.Helix
 
 const val SOURCE_URL = "https://github.com/hunixcode/survix"
+
+/** Helix, the organisation Survix belongs to. */
+const val HELIX_URL = "https://github.com/org-helix"
 
 @Composable
 fun SettingsScreen(onBack: () -> Unit) {
@@ -106,11 +113,7 @@ fun SettingsScreen(onBack: () -> Unit) {
             }
             Section(stringResource(R.string.settings_about)) {
                 HelixCard(Modifier.fillMaxWidth()) {
-                    Row(verticalAlignment = androidx.compose.ui.Alignment.CenterVertically) {
-                        HelixMark(height = 14.dp)
-                        Spacer(Modifier.padding(start = 8.dp))
-                        Text(stringResource(R.string.app_name), style = MaterialTheme.typography.titleLarge, color = c.text)
-                    }
+                    Text(stringResource(R.string.app_name), style = MaterialTheme.typography.titleLarge, color = c.text)
                     Spacer(Modifier.height(4.dp))
                     Text(
                         stringResource(R.string.settings_version, BuildConfig.VERSION_NAME),
@@ -120,24 +123,45 @@ fun SettingsScreen(onBack: () -> Unit) {
                     Spacer(Modifier.height(8.dp))
                     Text(stringResource(R.string.settings_about_text), style = MaterialTheme.typography.bodyMedium, color = c.body)
                     Spacer(Modifier.height(4.dp))
-                    val sourceLabel = stringResource(R.string.settings_source)
-                    val described = sourceLabel + " " + stringResource(R.string.opens_in_browser)
-                    GhostButton(
-                        text = sourceLabel,
-                        icon = Icons.AutoMirrored.Rounded.OpenInNew,
-                        onClick = {
-                            try {
-                                context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(SOURCE_URL)))
-                            } catch (e: ActivityNotFoundException) {
-                                // No browser: nothing to open.
-                            }
-                        },
-                        modifier = Modifier.semantics { contentDescription = described },
-                    )
+                    LinkButton(stringResource(R.string.settings_source), Icons.AutoMirrored.Rounded.OpenInNew) { context.openUrl(SOURCE_URL) }
+                    Text(stringResource(R.string.settings_fonts), style = MaterialTheme.typography.bodySmall, color = c.muted)
+                }
+                Spacer(Modifier.height(12.dp))
+                // Credit to the organisation behind the app.
+                HelixCard(Modifier.fillMaxWidth()) {
+                    Row(verticalAlignment = Alignment.CenterVertically) {
+                        HelixMark(height = 14.dp)
+                        Spacer(Modifier.width(10.dp))
+                        Text(stringResource(R.string.made_by_helix), style = MaterialTheme.typography.titleMedium, color = c.text)
+                    }
+                    Spacer(Modifier.height(8.dp))
+                    Text(stringResource(R.string.settings_helix_text), style = MaterialTheme.typography.bodyMedium, color = c.body)
+                    Spacer(Modifier.height(4.dp))
+                    LinkButton(stringResource(R.string.settings_helix_link), Icons.AutoMirrored.Rounded.OpenInNew) { context.openUrl(HELIX_URL) }
                 }
             }
             Spacer(Modifier.height(16.dp))
         }
+    }
+}
+
+/** A text button that opens a web page; screen readers also hear that it leaves the app. */
+@Composable
+private fun LinkButton(text: String, icon: ImageVector, onClick: () -> Unit) {
+    val described = text + " " + stringResource(R.string.opens_in_browser)
+    GhostButton(
+        text = text,
+        icon = icon,
+        onClick = onClick,
+        modifier = Modifier.semantics { contentDescription = described },
+    )
+}
+
+private fun Context.openUrl(url: String) {
+    try {
+        startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(url)))
+    } catch (e: ActivityNotFoundException) {
+        // No browser: nothing to open.
     }
 }
 

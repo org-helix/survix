@@ -1,12 +1,14 @@
 package org.helix.survix.ui.welcome
 
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.safeDrawingPadding
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.layout.widthIn
 import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.background
@@ -29,6 +31,7 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import org.helix.survix.R
 import org.helix.survix.ui.LocalSurvixApp
 import org.helix.survix.ui.components.Eyebrow
+import org.helix.survix.ui.components.HelixMark
 import org.helix.survix.ui.components.PixelSunsetImage
 import org.helix.survix.ui.components.PrimaryButton
 import org.helix.survix.ui.components.SecondaryButton
@@ -95,6 +98,12 @@ fun WelcomeScreen(onStart: (withExample: Boolean) -> Unit) {
                 stringResource(R.string.welcome_meta_2),
                 stringResource(R.string.welcome_meta_3),
             )
+            Spacer(Modifier.height(16.dp))
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                HelixMark(height = 12.dp)
+                Spacer(Modifier.width(8.dp))
+                Text(stringResource(R.string.made_by_helix), style = MaterialTheme.typography.labelMedium, color = c.muted)
+            }
         }
     }
 }

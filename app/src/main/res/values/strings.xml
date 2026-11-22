@@ -29,6 +29,7 @@
     <string name="welcome_meta_1">Gratuit</string>
     <string name="welcome_meta_2">Open source</string>
     <string name="welcome_meta_3">Sans pistage</string>
+    <string name="made_by_helix">Un projet Helix</string>
     <string name="illustration_description">Coucher de soleil en pixel art aux couleurs d’Helix</string>
 
     <!-- Theme and language -->
@@ -219,7 +220,10 @@
     <string name="settings_data_text">Vos sondages sont enregistrés uniquement sur ce téléphone. Survix n’a pas accès à Internet : rien ne sort sans que vous l’exportiez ou le partagiez.</string>
     <string name="settings_data_count">%1$s enregistrés.</string>
     <string name="settings_about">À propos</string>
-    <string name="settings_about_text">Un logiciel libre d’Helix : gratuit, open source, sans publicité ni pistage.</string>
+    <string name="settings_about_text">Un logiciel d’intérêt général : gratuit, open source, hors ligne d’abord, sans publicité ni pistage.</string>
+    <string name="settings_helix_text">Helix crée des logiciels libres pour les communautés que la tech grand public laisse de côté : les écoles, les centres de santé et les personnes qu’ils accompagnent.</string>
+    <string name="settings_helix_link">Helix sur GitHub</string>
+    <string name="settings_fonts">Polices Bricolage Grotesque et Geist, sous licence SIL Open Font License.</string>
     <string name="settings_version">Version %1$s</string>
     <string name="settings_source">Code source</string>
     <string name="settings_format">Format des fichiers</string>
