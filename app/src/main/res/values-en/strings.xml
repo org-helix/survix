@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Common -->
+    <string name="back">Back</string>
+    <string name="more">More options</string>
+    <string name="cancel">Cancel</string>
+    <string name="undo">Undo</string>
+    <string name="ok">OK</string>
+    <string name="close">Close</string>
+    <string name="untitled">Untitled</string>
+    <string name="settings">Settings</string>
+    <string name="search">Search</string>
+    <string name="clear_search">Clear search</string>
+
+    <!-- Welcome -->
+    <string name="welcome_eyebrow_1">Open source</string>
+    <string name="welcome_eyebrow_2">Offline first</string>
+    <string name="welcome_title">Surveys that</string>
+    <string name="welcome_title_accent">stay with you.</string>
+    <string name="welcome_lead">Write your surveys block by block, keep them on this phone, and export them whenever you want to use them elsewhere.</string>
+    <string name="welcome_theme">Appearance</string>
+    <string name="welcome_start">Get started</string>
+    <string name="welcome_start_example">Start with an example</string>
+    <string name="welcome_meta_1">Free</string>
+    <string name="welcome_meta_2">Open source</string>
+    <string name="welcome_meta_3">No tracking</string>
+    <string name="illustration_description">Pixel-art sunset in Helix colours</string>
+
+    <!-- Theme and language -->
+    <string name="theme_system">System</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="language_system">System</string>
+
+    <!-- Library -->
+    <string name="library_eyebrow_1">On this phone</string>
+    <string name="library_eyebrow_2">Offline</string>
+    <string name="library_title">Your surveys</string>
+    <string name="new_survey">New survey</string>
+    <string name="import_file">Import a file</string>
+    <string name="export_all">Export all</string>
+    <string name="add_example">Add the example</string>
+    <string name="search_placeholder">Search surveys</string>
+    <string name="no_results">No survey matches “%1$s”.</string>
+    <string name="empty_title">No surveys yet.</string>
+    <string name="empty_text">Create your first survey, import a .survix.json file, or start from the example.</string>
+    <string name="start_from_example">Start from the example</string>
+    <string name="updated_on">Edited %1$s</string>
+    <string name="survey_actions">Actions for “%1$s”</string>
+    <plurals name="question_count">
+        <item quantity="one">%d question</item>
+        <item quantity="other">%d questions</item>
+    </plurals>
+    <plurals name="section_count">
+        <item quantity="one">%d section</item>
+        <item quantity="other">%d sections</item>
+    </plurals>
+    <plurals name="survey_count">
+        <item quantity="one">%d survey</item>
+        <item quantity="other">%d surveys</item>
+    </plurals>
+    <string name="unreadable_files">Some saved files could not be read and were skipped.</string>
+
+    <!-- Survey actions -->
+    <string name="action_open">Edit</string>
+    <string name="action_preview">Preview</string>
+    <string name="action_duplicate">Duplicate</string>
+    <string name="action_export_json">Export (.survix.json)</string>
+    <string name="action_export_markdown">Export as text (.md)</string>
+    <string name="action_share">Share</string>
+    <string name="action_delete">Delete</string>
+    <string name="copy_suffix">%1$s (copy)</string>
+
+    <!-- Messages -->
+    <string name="msg_deleted">“%1$s” deleted</string>
+    <string name="msg_duplicated">Copy created</string>
+    <string name="msg_exported">File saved</string>
+    <plurals name="msg_imported">
+        <item quantity="one">%d survey imported</item>
+        <item quantity="other">%d surveys imported</item>
+    </plurals>
+    <string name="msg_example_added">Example added</string>
+    <string name="msg_block_deleted">Block deleted</string>
+    <string name="err_write">Could not write the file.</string>
+    <string name="err_save">Could not save on this phone. Check the free space.</string>
+    <string name="err_read">Could not read this file.</string>
+    <string name="err_too_big">This file is too large to be a survey.</string>
+    <string name="err_not_json">This file is not a Survix survey (it is not JSON).</string>
+    <string name="err_not_survix">This JSON file is not a Survix survey.</string>
+    <string name="err_newer">This survey was made with a newer version of Survix. Update the app to open it.</string>
+    <string name="err_invalid">This Survix file is damaged.</string>
+    <string name="err_empty">This file holds no survey.</string>
+    <string name="err_no_share_app">No app can receive this file.</string>
+    <string name="share_title">Share “%1$s”</string>
+
+    <!-- Editor -->
+    <string name="editor_title">Edit</string>
+    <string name="editor_survey">Survey</string>
+    <string name="editor_title_label">Title</string>
+    <string name="editor_title_placeholder">Survey title</string>
+    <string name="editor_description_label">Introduction</string>
+    <string name="editor_description_placeholder">What people should know before answering (optional)</string>
+    <string name="editor_saved">Saved on this phone</string>
+    <string name="editor_empty_title">Add your first block.</string>
+    <string name="editor_empty_text">A section to structure, a question to ask: each block is a module you can move, duplicate or delete.</string>
+    <string name="add_block">Add a block</string>
+    <string name="add_block_title">Add a block</string>
+    <string name="add_block_after">It will be added after the open block.</string>
+    <string name="question_number">Question %1$d</string>
+    <string name="block_untitled">No label</string>
+    <string name="block_expand">Open block</string>
+    <string name="block_collapse">Close block</string>
+    <string name="block_move_up">Move up</string>
+    <string name="block_move_down">Move down</string>
+    <string name="block_duplicate">Duplicate block</string>
+    <string name="block_delete">Delete block</string>
+    <string name="block_needs_attention">Needs attention</string>
+    <string name="survey_not_found">This survey no longer exists.</string>
+
+    <!-- Block kinds -->
+    <string name="kind_section">Section</string>
+    <string name="kind_section_desc">A title and some text to structure the survey.</string>
+    <string name="kind_text">Free text</string>
+    <string name="kind_text_desc">A short answer or a paragraph.</string>
+    <string name="kind_choice">Choice</string>
+    <string name="kind_choice_desc">A list of options, one or several answers.</string>
+    <string name="kind_yes_no">Yes / No</string>
+    <string name="kind_yes_no_desc">A closed question.</string>
+    <string name="kind_rating">Rating</string>
+    <string name="kind_rating_desc">A scale from 1 up to 10.</string>
+    <string name="kind_number">Number</string>
+    <string name="kind_number_desc">A numeric value, with bounds and a unit.</string>
+    <string name="kind_date">Date</string>
+    <string name="kind_date_desc">A day on the calendar.</string>
+
+    <!-- Block fields -->
+    <string name="field_section_title">Section title</string>
+    <string name="field_section_text">Text</string>
+    <string name="field_section_text_placeholder">An introductory sentence (optional)</string>
+    <string name="field_label">Question</string>
+    <string name="field_label_placeholder">What do you want to ask?</string>
+    <string name="field_help">Help</string>
+    <string name="field_help_placeholder">A note under the question (optional)</string>
+    <string name="field_required">Answer required</string>
+    <string name="field_text_short">Short answer</string>
+    <string name="field_text_long">Paragraph</string>
+    <string name="field_placeholder">Hint text</string>
+    <string name="field_placeholder_placeholder">Shown in the empty field (optional)</string>
+    <string name="field_options">Options</string>
+    <string name="field_option_placeholder">Option %1$d</string>
+    <string name="field_add_option">Add an option</string>
+    <string name="field_remove_option">Remove option %1$d</string>
+    <string name="field_multiple">Several answers allowed</string>
+    <string name="field_allow_other">Add “Other” with a free-text field</string>
+    <string name="field_scale">Scale</string>
+    <string name="field_scale_value">From 1 to %1$d</string>
+    <string name="field_scale_less">Shorter scale</string>
+    <string name="field_scale_more">Longer scale</string>
+    <string name="field_min_label">Lowest label</string>
+    <string name="field_min_label_placeholder">E.g. Not at all</string>
+    <string name="field_max_label">Highest label</string>
+    <string name="field_max_label_placeholder">E.g. Completely</string>
+    <string name="field_min">Minimum</string>
+    <string name="field_max">Maximum</string>
+    <string name="field_bound_placeholder">None</string>
+    <string name="field_unit">Unit</string>
+    <string name="field_unit_placeholder">E.g. years, km, $</string>
+    <string name="field_not_a_number">Enter a number.</string>
+    <string name="field_date_hint">People will pick a date on a calendar.</string>
+    <string name="field_yes_no_hint">People will answer Yes or No.</string>
+
+    <!-- Issues -->
+    <string name="issue_empty_label">The label is empty.</string>
+    <string name="issue_no_options">Add at least one option.</string>
+    <string name="issue_empty_option">An option is empty.</string>
+    <string name="issue_duplicate_option">Two options are the same.</string>
+
+    <string name="issue_min_above_max">The minimum is above the maximum.</string>
+
+    <!-- Preview -->
+    <string name="preview_title">Preview</string>
+    <string name="preview_notice">This is the survey as people will see it. Answers typed here are not saved.</string>
+    <string name="preview_required_legend">* Answer required</string>
+    <string name="preview_check">Check answers</string>
+    <string name="preview_all_good">Everything is filled in correctly.</string>
+    <plurals name="preview_missing">
+        <item quantity="one">%d answer to complete</item>
+        <item quantity="other">%d answers to complete</item>
+    </plurals>
+    <string name="preview_required_error">This question is required.</string>
+    <string name="preview_number_error">Enter a number.</string>
+    <string name="preview_min_error">The minimum is %1$s.</string>
+    <string name="preview_max_error">The maximum is %1$s.</string>
+    <string name="preview_pick_date">Pick a date</string>
+    <string name="preview_other">Other</string>
+    <string name="preview_other_placeholder">Please specify</string>
+    <string name="preview_reset">Clear answers</string>
+    <string name="preview_empty">This survey has no blocks yet.</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="required_mark">required</string>
+
+    <!-- Settings -->
+    <string name="settings_appearance">Appearance</string>
+    <string name="settings_language">Language</string>
+    <string name="settings_data">Your data</string>
+    <string name="settings_data_text">Your surveys are saved only on this phone. Survix has no Internet access: nothing leaves unless you export or share it.</string>
+    <string name="settings_data_count">%1$s saved.</string>
+    <string name="settings_about">About</string>
+    <string name="settings_about_text">Free software from Helix: free of charge, open source, no ads and no tracking.</string>
+    <string name="settings_version">Version %1$s</string>
+    <string name="settings_source">Source code</string>
+    <string name="settings_format">File format</string>
+    <string name="settings_format_text">.survix.json exports are readable, versioned JSON, documented in the repository. The .md export gives text ready to print.</string>
+    <string name="opens_in_browser">(opens in the browser)</string>
+
+    <!-- Markdown export -->
+    <string name="md_required">Answer required</string>
+    <string name="md_one_answer">One answer</string>
+    <string name="md_several_answers">Several answers allowed</string>
+    <string name="md_answer">Answer</string>
+    <string name="md_date">Date</string>
+    <string name="md_number">Number</string>
+    <string name="md_scale">From 1 to %1$d</string>
+    <string name="md_between">Between %1$s and %2$s</string>
+    <string name="md_at_least">At least %1$s</string>
+    <string name="md_at_most">At most %1$s</string>
+</resources>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- French is the default language, as in other Helix apps. English lives in values-en. -->
+<resources>
+    <string name="app_name" translatable="false">Survix</string>
+
+    <!-- Common -->
+    <string name="back">Retour</string>
+    <string name="more">Plus d’options</string>
+    <string name="cancel">Annuler</string>
+    <string name="undo">Annuler</string>
+    <string name="ok">OK</string>
+    <string name="close">Fermer</string>
+    <string name="untitled">Sans titre</string>
+    <string name="settings">Paramètres</string>
+    <string name="search">Rechercher</string>
+    <string name="clear_search">Effacer la recherche</string>
+    <string name="dot_separator" translatable="false">" · "</string>
+
+    <!-- Welcome -->
+    <string name="welcome_eyebrow_1">Open source</string>
+    <string name="welcome_eyebrow_2">Hors ligne d’abord</string>
+    <string name="welcome_title">Des sondages</string>
+    <string name="welcome_title_accent">qui restent chez vous.</string>
+    <string name="welcome_lead">Écrivez vos sondages bloc par bloc, gardez-les sur ce téléphone et exportez-les quand vous voulez les utiliser ailleurs.</string>
+    <string name="welcome_language" translatable="false">Langue · Language</string>
+    <string name="welcome_theme">Apparence</string>
+    <string name="welcome_start">Commencer</string>
+    <string name="welcome_start_example">Commencer avec un exemple</string>
+    <string name="welcome_meta_1">Gratuit</string>
+    <string name="welcome_meta_2">Open source</string>
+    <string name="welcome_meta_3">Sans pistage</string>
+    <string name="illustration_description">Coucher de soleil en pixel art aux couleurs d’Helix</string>
+
+    <!-- Theme and language -->
+    <string name="theme_system">Système</string>
+    <string name="theme_light">Clair</string>
+    <string name="theme_dark">Sombre</string>
+    <string name="language_system">Système</string>
+    <string name="language_fr" translatable="false">Français</string>
+    <string name="language_en" translatable="false">English</string>
+
+    <!-- Library -->
+    <string name="library_eyebrow_1">Sur ce téléphone</string>
+    <string name="library_eyebrow_2">Hors ligne</string>
+    <string name="library_title">Vos sondages</string>
+    <string name="new_survey">Nouveau sondage</string>
+    <string name="import_file">Importer un fichier</string>
+    <string name="export_all">Tout exporter</string>
+    <string name="add_example">Ajouter l’exemple</string>
+    <string name="search_placeholder">Rechercher un sondage</string>
+    <string name="no_results">Aucun sondage ne correspond à « %1$s ».</string>
+    <string name="empty_title">Aucun sondage pour l’instant.</string>
+    <string name="empty_text">Créez un premier sondage, importez un fichier .survix.json ou partez de l’exemple.</string>
+    <string name="start_from_example">Partir de l’exemple</string>
+    <string name="updated_on">Modifié le %1$s</string>
+    <string name="survey_actions">Actions pour « %1$s »</string>
+    <plurals name="question_count">
+        <item quantity="one">%d question</item>
+        <item quantity="other">%d questions</item>
+    </plurals>
+    <plurals name="section_count">
+        <item quantity="one">%d section</item>
+        <item quantity="other">%d sections</item>
+    </plurals>
+    <plurals name="survey_count">
+        <item quantity="one">%d sondage</item>
+        <item quantity="other">%d sondages</item>
+    </plurals>
+    <string name="unreadable_files">Certains fichiers enregistrés sont illisibles et ont été ignorés.</string>
+
+    <!-- Survey actions -->
+    <string name="action_open">Modifier</string>
+    <string name="action_preview">Aperçu</string>
+    <string name="action_duplicate">Dupliquer</string>
+    <string name="action_export_json">Exporter (.survix.json)</string>
+    <string name="action_export_markdown">Exporter en texte (.md)</string>
+    <string name="action_share">Partager</string>
+    <string name="action_delete">Supprimer</string>
+    <string name="copy_suffix">%1$s (copie)</string>
+
+    <!-- Messages -->
+    <string name="msg_deleted">« %1$s » supprimé</string>
+    <string name="msg_duplicated">Copie créée</string>
+    <string name="msg_exported">Fichier enregistré</string>
+    <plurals name="msg_imported">
+        <item quantity="one">%d sondage importé</item>
+        <item quantity="other">%d sondages importés</item>
+    </plurals>
+    <string name="msg_example_added">Exemple ajouté</string>
+    <string name="msg_block_deleted">Bloc supprimé</string>
+    <string name="err_write">Impossible d’écrire le fichier.</string>
+    <string name="err_save">Impossible d’enregistrer sur ce téléphone. Vérifiez l’espace libre.</string>
+    <string name="err_read">Impossible de lire ce fichier.</string>
+    <string name="err_too_big">Ce fichier est trop volumineux pour être un sondage.</string>
+    <string name="err_not_json">Ce fichier n’est pas un sondage Survix (il n’est pas au format JSON).</string>
+    <string name="err_not_survix">Ce fichier JSON n’est pas un sondage Survix.</string>
+    <string name="err_newer">Ce sondage a été créé avec une version plus récente de Survix. Mettez l’application à jour pour l’ouvrir.</string>
+    <string name="err_invalid">Ce fichier Survix est endommagé.</string>
+    <string name="err_empty">Ce fichier ne contient aucun sondage.</string>
+    <string name="err_no_share_app">Aucune application ne peut recevoir ce fichier.</string>
+    <string name="share_title">Partager « %1$s »</string>
+
+    <!-- Editor -->
+    <string name="editor_title">Modifier</string>
+    <string name="editor_survey">Sondage</string>
+    <string name="editor_title_label">Titre</string>
+    <string name="editor_title_placeholder">Titre du sondage</string>
+    <string name="editor_description_label">Introduction</string>
+    <string name="editor_description_placeholder">Ce que les personnes doivent savoir avant de répondre (facultatif)</string>
+    <string name="editor_saved">Enregistré sur ce téléphone</string>
+    <string name="editor_empty_title">Ajoutez votre premier bloc.</string>
+    <string name="editor_empty_text">Une section pour structurer, une question pour demander : chaque bloc est un module que vous pouvez déplacer, dupliquer ou supprimer.</string>
+    <string name="add_block">Ajouter un bloc</string>
+    <string name="add_block_title">Ajouter un bloc</string>
+    <string name="add_block_after">Il sera ajouté après le bloc ouvert.</string>
+    <string name="question_number">Question %1$d</string>
+    <string name="block_untitled">Sans intitulé</string>
+    <string name="block_expand">Ouvrir le bloc</string>
+    <string name="block_collapse">Fermer le bloc</string>
+    <string name="block_move_up">Monter</string>
+    <string name="block_move_down">Descendre</string>
+    <string name="block_duplicate">Dupliquer le bloc</string>
+    <string name="block_delete">Supprimer le bloc</string>
+    <string name="block_needs_attention">À compléter</string>
+    <string name="survey_not_found">Ce sondage n’existe plus.</string>
+
+    <!-- Block kinds -->
+    <string name="kind_section">Section</string>
+    <string name="kind_section_desc">Un titre et un texte pour structurer le sondage.</string>
+    <string name="kind_text">Texte libre</string>
+    <string name="kind_text_desc">Une réponse courte ou un paragraphe.</string>
+    <string name="kind_choice">Choix</string>
+    <string name="kind_choice_desc">Une liste d’options, une ou plusieurs réponses.</string>
+    <string name="kind_yes_no">Oui / Non</string>
+    <string name="kind_yes_no_desc">Une question fermée.</string>
+    <string name="kind_rating">Note</string>
+    <string name="kind_rating_desc">Une échelle de 1 à 10 au plus.</string>
+    <string name="kind_number">Nombre</string>
+    <string name="kind_number_desc">Une valeur numérique, avec des bornes et une unité.</string>
+    <string name="kind_date">Date</string>
+    <string name="kind_date_desc">Un jour du calendrier.</string>
+
+    <!-- Block fields -->
+    <string name="field_section_title">Titre de la section</string>
+    <string name="field_section_text">Texte</string>
+    <string name="field_section_text_placeholder">Une phrase d’introduction (facultatif)</string>
+    <string name="field_label">Question</string>
+    <string name="field_label_placeholder">Que voulez-vous demander ?</string>
+    <string name="field_help">Aide</string>
+    <string name="field_help_placeholder">Une précision sous la question (facultatif)</string>
+    <string name="field_required">Réponse obligatoire</string>
+    <string name="field_text_short">Réponse courte</string>
+    <string name="field_text_long">Paragraphe</string>
+    <string name="field_placeholder">Texte indicatif</string>
+    <string name="field_placeholder_placeholder">Affiché dans le champ vide (facultatif)</string>
+    <string name="field_options">Options</string>
+    <string name="field_option_placeholder">Option %1$d</string>
+    <string name="field_add_option">Ajouter une option</string>
+    <string name="field_remove_option">Supprimer l’option %1$d</string>
+    <string name="field_multiple">Plusieurs réponses possibles</string>
+    <string name="field_allow_other">Ajouter « Autre » avec un champ libre</string>
+    <string name="field_scale">Échelle</string>
+    <string name="field_scale_value">De 1 à %1$d</string>
+    <string name="field_scale_less">Réduire l’échelle</string>
+    <string name="field_scale_more">Agrandir l’échelle</string>
+    <string name="field_min_label">Libellé du minimum</string>
+    <string name="field_min_label_placeholder">Ex. : Pas du tout</string>
+    <string name="field_max_label">Libellé du maximum</string>
+    <string name="field_max_label_placeholder">Ex. : Tout à fait</string>
+    <string name="field_min">Minimum</string>
+    <string name="field_max">Maximum</string>
+    <string name="field_bound_placeholder">Aucun</string>
+    <string name="field_unit">Unité</string>
+    <string name="field_unit_placeholder">Ex. : ans, km, €</string>
+    <string name="field_not_a_number">Saisissez un nombre.</string>
+    <string name="field_date_hint">Les personnes choisiront une date dans un calendrier.</string>
+    <string name="field_yes_no_hint">Les personnes répondront par Oui ou par Non.</string>
+
+    <!-- Issues -->
+    <string name="issue_empty_label">L’intitulé est vide.</string>
+    <string name="issue_no_options">Ajoutez au moins une option.</string>
+    <string name="issue_empty_option">Une option est vide.</string>
+    <string name="issue_duplicate_option">Deux options sont identiques.</string>
+
+    <string name="issue_min_above_max">Le minimum dépasse le maximum.</string>
+
+    <!-- Preview -->
+    <string name="preview_title">Aperçu</string>
+    <string name="preview_notice">Voici le sondage tel que les personnes le verront. Les réponses saisies ici ne sont pas enregistrées.</string>
+    <string name="preview_required_legend">* Réponse obligatoire</string>
+    <string name="preview_check">Vérifier les réponses</string>
+    <string name="preview_all_good">Tout est rempli correctement.</string>
+    <plurals name="preview_missing">
+        <item quantity="one">%d réponse à compléter</item>
+        <item quantity="other">%d réponses à compléter</item>
+    </plurals>
+    <string name="preview_required_error">Cette question est obligatoire.</string>
+    <string name="preview_number_error">Saisissez un nombre.</string>
+    <string name="preview_min_error">Le minimum est %1$s.</string>
+    <string name="preview_max_error">Le maximum est %1$s.</string>
+    <string name="preview_pick_date">Choisir une date</string>
+    <string name="preview_other">Autre</string>
+    <string name="preview_other_placeholder">Précisez</string>
+    <string name="preview_reset">Effacer les réponses</string>
+    <string name="preview_empty">Ce sondage ne contient encore aucun bloc.</string>
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
+    <string name="required_mark">obligatoire</string>
+
+    <!-- Settings -->
+    <string name="settings_appearance">Apparence</string>
+    <string name="settings_language">Langue</string>
+    <string name="settings_data">Vos données</string>
+    <string name="settings_data_text">Vos sondages sont enregistrés uniquement sur ce téléphone. Survix n’a pas accès à Internet : rien ne sort sans que vous l’exportiez ou le partagiez.</string>
+    <string name="settings_data_count">%1$s enregistrés.</string>
+    <string name="settings_about">À propos</string>
+    <string name="settings_about_text">Un logiciel libre d’Helix : gratuit, open source, sans publicité ni pistage.</string>
+    <string name="settings_version">Version %1$s</string>
+    <string name="settings_source">Code source</string>
+    <string name="settings_format">Format des fichiers</string>
+    <string name="settings_format_text">Les exports .survix.json sont du JSON lisible et versionné, documenté dans le dépôt. L’export .md donne un texte prêt à imprimer.</string>
+    <string name="opens_in_browser">(s’ouvre dans le navigateur)</string>
+
+    <!-- Markdown export -->
+    <string name="md_required">Réponse obligatoire</string>
+    <string name="md_one_answer">Une seule réponse</string>
+    <string name="md_several_answers">Plusieurs réponses possibles</string>
+    <string name="md_answer">Réponse</string>
+    <string name="md_date">Date</string>
+    <string name="md_number">Nombre</string>
+    <string name="md_scale">De 1 à %1$d</string>
+    <string name="md_between">Entre %1$s et %2$s</string>
+    <string name="md_at_least">Au moins %1$s</string>
+    <string name="md_at_most">Au plus %1$s</string>
+</resources>

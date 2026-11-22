@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Android 11 and older: surveys and settings are included in the device's own backup. -->
+<full-backup-content>
+    <include domain="file" path="surveys/" />
+    <include domain="sharedpref" path="." />
+</full-backup-content>

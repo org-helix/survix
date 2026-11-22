@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Window and launcher colours only. The UI reads HelixPalette (core). -->
+<resources>
+    <color name="canvas">#FAF6ED</color>
+    <color name="ink">#322921</color>
+</resources>

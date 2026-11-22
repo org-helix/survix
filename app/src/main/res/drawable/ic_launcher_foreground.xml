@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Survix mark: a survey card in Pale Amber with three answer rows, the first one ticked
+  in Helix Red. Pixel-aligned like the Helix logo, inside the 66 dp safe zone.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path android:fillColor="#FAF6ED" android:pathData="M36,30h36a6,6 0,0 1,6 6v36a6,6 0,0 1,-6 6h-36a6,6 0,0 1,-6 -6v-36a6,6 0,0 1,6 -6z" />
+    <path android:fillColor="#B24E30" android:pathData="M37,37h8v8h-8zM50,39h22v4h-22z" />
+    <path android:fillColor="#DCAFA2" android:pathData="M37,50h8v8h-8zM37,63h8v8h-8z" />
+    <path android:fillColor="#918F89" android:pathData="M50,52h16v4h-16zM50,65h20v4h-20z" />
+</vector>
