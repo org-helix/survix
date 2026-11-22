@@ -1,0 +1,1 @@
+First release: block-based survey editor, preview, .survix.json and Markdown export, sharing and import, French and English, light and dark themes.

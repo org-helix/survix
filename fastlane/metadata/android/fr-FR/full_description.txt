@@ -1,0 +1,18 @@
+Survix permet d’écrire des sondages sur un téléphone Android, bloc par bloc, de les garder sur le téléphone et de les exporter pour les utiliser ailleurs.
+
+Survix est un projet Helix. Helix crée des logiciels libres pour les communautés que la tech grand public laisse de côté : les écoles, les centres de santé et les personnes qu’ils accompagnent. Comme toutes les applications Helix, Survix est gratuit, open source et pensé pour fonctionner hors ligne.
+
+<b>Ce que vous pouvez faire</b>
+<ul>
+<li>Construire un sondage avec sept types de blocs : section, texte libre, choix unique ou multiple (avec « Autre » en option), oui / non, note sur une échelle de 2 à 10 points, nombre avec bornes et unité, date.</li>
+<li>Donner à chaque question un libellé, une aide et la rendre obligatoire ; l’éditeur signale les libellés vides, les options manquantes ou en double et les bornes inversées.</li>
+<li>Ne jamais perdre une modification : tout est enregistré pendant la saisie, et chaque fichier est écrit en une fois, sans état intermédiaire.</li>
+<li>Prévisualiser le sondage comme un répondant, avec la vérification des réponses obligatoires et des bornes. Rien n’y est enregistré.</li>
+<li>Exporter un sondage ou tous en .survix.json (JSON lisible et documenté) ou en Markdown prêt à imprimer, le partager par n’importe quelle application et le réimporter sur un autre téléphone sans jamais écraser un sondage existant.</li>
+<li>Utiliser l’application en français ou en anglais, en thème clair ou sombre.</li>
+</ul>
+
+<b>Vos données restent chez vous</b>
+Survix n’a pas la permission d’accéder à Internet : pas de compte, pas de publicité, pas de pistage. Les sondages ne quittent le téléphone que si vous les exportez ou les partagez, et ils sont inclus dans la sauvegarde du téléphone.
+
+Android 7.0 ou plus récent.

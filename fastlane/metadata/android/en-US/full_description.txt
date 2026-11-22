@@ -1,0 +1,18 @@
+Survix lets you write surveys on an Android phone, block by block, keep them on the phone and export them to use elsewhere.
+
+Survix is a Helix project. Helix builds public-good software for the communities that mainstream tech leaves behind: schools, clinics and the people they serve. Like every Helix app, Survix is free, open source and built to work offline first.
+
+<b>What you can do</b>
+<ul>
+<li>Build a survey from seven kinds of blocks: section, free text, single or multiple choice (with an optional "Other"), yes / no, rating on a scale of 2 to 10 points, number with bounds and unit, date.</li>
+<li>Give every question a label and a help text, and make it required; the editor points out empty labels, missing or duplicated options and reversed bounds.</li>
+<li>Never lose an edit: everything is saved as you type, and each file is written in one go, never half-written.</li>
+<li>Preview the survey as a respondent would, with required answers and number bounds checked. Nothing typed there is saved.</li>
+<li>Export one survey or all of them as .survix.json (readable, documented JSON) or as Markdown ready to print, share it through any app, and import it on another phone without ever overwriting an existing survey.</li>
+<li>Use the app in French or English, with a light or dark theme.</li>
+</ul>
+
+<b>Your data stays with you</b>
+Survix has no Internet permission: no account, no ads, no tracking. Surveys only leave the phone when you export or share them, and they are included in the phone's own backup.
+
+Android 7.0 or newer.

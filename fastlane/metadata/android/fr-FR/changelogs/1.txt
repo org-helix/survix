@@ -1,0 +1,1 @@
+Première version : éditeur de sondages par blocs, aperçu, export .survix.json et Markdown, partage et import, français et anglais, thèmes clair et sombre.

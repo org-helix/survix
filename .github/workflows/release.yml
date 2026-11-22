@@ -4,6 +4,9 @@ name: Release
 #   survix-android.apk
 # Or run this workflow by hand: with a version (v0.1.0) it creates that tag on the commit
 # it built and publishes the release; with no version it only builds the APK.
+# Release notes come from docs/releases/<tag>.md when that file exists, otherwise they are
+# generated from the commits. To rewrite the notes of a published release, use
+# release-notes.yml.
 # The file name carries no version, so .../releases/latest/download/survix-android.apk
 # always points at the newest one.
 #
@@ -74,11 +77,17 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           VERSION: ${{ inputs.version }}
         run: |
+          if [ "$GITHUB_REF_TYPE" = tag ]; then tag="$GITHUB_REF_NAME"; else tag="$VERSION"; fi
+          if [ -f "docs/releases/$tag.md" ]; then
+            notes=(--notes-file "docs/releases/$tag.md")
+          else
+            notes=(--generate-notes)
+          fi
           if [ "$GITHUB_REF_TYPE" = tag ]; then
             # The tag was pushed: publish it as it is.
             gh release create "$GITHUB_REF_NAME" dist/survix-android.apk \
               --title "Survix $GITHUB_REF_NAME" \
-              --generate-notes \
+              "${notes[@]}" \
               --verify-tag
           else
             # Run by hand: create the tag on the commit that was just built.
@@ -89,5 +98,5 @@ jobs:
             gh release create "$VERSION" dist/survix-android.apk \
               --target "$GITHUB_SHA" \
               --title "Survix $VERSION" \
-              --generate-notes
+              "${notes[@]}"
           fi
