@@ -8,6 +8,11 @@ Like every Helix app, Survix is free, open source and offline first. It has no I
 
 [**Download the latest APK**](https://github.com/org-helix/survix/releases/latest/download/survix-android.apk) · Android 7.0 or newer · Français / English · [All releases](https://github.com/org-helix/survix/releases)
 
+<p align="center">
+  <img src="docs/screenshots/editor.png" width="300" alt="The Survix editor: the survey “Your feedback after the visit”, with its sections and questions as cards and an “Add a block” button">
+  <img src="docs/screenshots/preview.png" width="300" alt="The preview of the same survey, as a respondent sees it: a date field, a multiple-choice question and a number field">
+</p>
+
 ## Features
 
 - **Library**: every survey on the phone, newest first, with search once there are a few. Open, preview, duplicate, export, share or delete (with undo) from each card.
