@@ -93,4 +93,8 @@ All colours live in `core/src/main/kotlin/org/helix/survix/core/HelixPalette.kt`
 
 Questions, ideas and bug reports are welcome in the [issues](https://github.com/hunixcode/survix/issues).
 
+## License
+
+Survix is free software, released under the [GNU General Public License, version 3](LICENSE). You may use, study, share and change it; versions you distribute must stay under the same license. The bundled fonts keep their own license (SIL Open Font License).
+
 > No tracking, no ads, no lock-in. Built for and with the communities that use it.

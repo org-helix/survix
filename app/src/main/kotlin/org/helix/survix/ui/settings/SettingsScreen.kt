@@ -124,6 +124,8 @@ fun SettingsScreen(onBack: () -> Unit) {
                     Text(stringResource(R.string.settings_about_text), style = MaterialTheme.typography.bodyMedium, color = c.body)
                     Spacer(Modifier.height(4.dp))
                     LinkButton(stringResource(R.string.settings_source), Icons.AutoMirrored.Rounded.OpenInNew) { context.openUrl(SOURCE_URL) }
+                    Text(stringResource(R.string.settings_license), style = MaterialTheme.typography.bodySmall, color = c.muted)
+                    Spacer(Modifier.height(2.dp))
                     Text(stringResource(R.string.settings_fonts), style = MaterialTheme.typography.bodySmall, color = c.muted)
                 }
                 Spacer(Modifier.height(12.dp))
