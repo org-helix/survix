@@ -52,7 +52,8 @@ import org.helix.survix.ui.components.HelixCard
 import org.helix.survix.ui.components.HelixMark
 import org.helix.survix.ui.theme.Helix
 
-const val SOURCE_URL = "https://github.com/hunixcode/survix"
+/** Survix source code, linked from Settings → About. */
+const val SOURCE_URL = "https://github.com/org-helix/survix"
 
 /** Helix, the organisation Survix belongs to. */
 const val HELIX_URL = "https://github.com/org-helix"

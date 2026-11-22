@@ -2,11 +2,11 @@
 
 **Write surveys on an Android phone, keep them there, export them when you need them.**
 
-Survix is a survey editor for Android from [Helix](https://github.com/org-helix), which builds public-good software for the communities that mainstream tech leaves behind: schools, clinics and the people they serve. A teacher preparing a feedback form, a clinic drafting an intake questionnaire or a community group planning a consultation can build it block by block, on a modest phone, with no connection and no account.
+Survix is a survey editor for Android from [Helix](https://org-helix.github.io/helix-website/), which builds public-good software for the communities that mainstream tech leaves behind: schools, clinics and the people they serve. A teacher preparing a feedback form, a clinic drafting an intake questionnaire or a community group planning a consultation can build it block by block, on a modest phone, with no connection and no account.
 
 Like every Helix app, Survix is free, open source and offline first. It has no Internet permission, no ads and no tracking: surveys stay on the phone until you export or share them.
 
-[**Download the latest APK**](https://github.com/hunixcode/survix/releases/latest/download/survix-android.apk) · Android 7.0 or newer · Français / English · [All releases](https://github.com/hunixcode/survix/releases)
+[**Download the latest APK**](https://github.com/org-helix/survix/releases/latest/download/survix-android.apk) · Android 7.0 or newer · Français / English · [All releases](https://github.com/org-helix/survix/releases)
 
 ## Features
 
@@ -42,7 +42,7 @@ Like every Helix app, Survix is free, open source and offline first. It has no I
 
 ## Install
 
-1. On the phone, download [`survix-android.apk`](https://github.com/hunixcode/survix/releases/latest/download/survix-android.apk) from the latest release.
+1. On the phone, download [`survix-android.apk`](https://github.com/org-helix/survix/releases/latest/download/survix-android.apk) from the latest release.
 2. Open it and allow your browser or file manager to install unknown apps when Android asks.
 
 Release APKs are currently signed with a temporary key. When releases move to a permanent key, the app will have to be uninstalled once before installing the new version: export your surveys first (**⋮ → Export all** in the library).
@@ -91,7 +91,7 @@ All colours live in `core/src/main/kotlin/org/helix/survix/core/HelixPalette.kt`
 - **Fonts**: [Bricolage Grotesque](https://github.com/ateliertriay/bricolage) and [Geist](https://github.com/vercel/geist-font), bundled under the SIL Open Font License ([`docs/licenses`](docs/licenses)).
 - **Icons**: [Material Icons](https://github.com/google/material-design-icons) (Apache License 2.0), through the Jetpack Compose icon library.
 
-Questions, ideas and bug reports are welcome in the [issues](https://github.com/hunixcode/survix/issues).
+Questions, ideas and bug reports are welcome in the [issues](https://github.com/org-helix/survix/issues). Before sending a change, read the [Helix contributing guide](https://github.com/org-helix/.github/blob/main/CONTRIBUTING.md); to report a security problem, follow the [security policy](https://github.com/org-helix/.github/blob/main/SECURITY.md).
 
 ## License
 
