@@ -55,7 +55,7 @@ Requires JDK 17 and the Android SDK (API 35).
 
 Strings live in `app/src/main/res/values/strings.xml` (French) and `values-en/strings.xml` (English); add a string to both.
 
-Releases are built by `.github/workflows/release.yml` when a `v*` tag is pushed. To sign with a release key, set the secrets listed at the top of that file; without them the APK is signed with a throwaway debug key.
+Releases are built by `.github/workflows/release.yml` when a `v*` tag is pushed, or when that workflow is run by hand with a version such as `v0.1.0` (it then creates the tag on the commit it built). To sign with a release key, set the secrets listed at the top of that file; without them the APK is signed with a throwaway debug key.
 
 ## Design
 

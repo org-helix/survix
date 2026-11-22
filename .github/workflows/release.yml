@@ -2,6 +2,8 @@ name: Release
 
 # Push a tag like v0.1.0 to build the Android app and publish a GitHub release with
 #   survix-android.apk
+# Or run this workflow by hand: with a version (v0.1.0) it creates that tag on the commit
+# it built and publishes the release; with no version it only builds the APK.
 # The file name carries no version, so .../releases/latest/download/survix-android.apk
 # always points at the newest one.
 #
@@ -13,6 +15,11 @@ on:
   push:
     tags: ["v*"]
   workflow_dispatch:
+    inputs:
+      version:
+        description: "Tag to create and publish, like v0.1.0. Leave empty to only build."
+        required: false
+        default: ""
 
 permissions:
   contents: read
@@ -51,7 +58,7 @@ jobs:
           if-no-files-found: error
 
   publish:
-    if: startsWith(github.ref, 'refs/tags/v')
+    if: startsWith(github.ref, 'refs/tags/v') || inputs.version != ''
     needs: apk
     runs-on: ubuntu-latest
     permissions:
@@ -65,8 +72,22 @@ jobs:
       - name: Create release
         env:
           GH_TOKEN: ${{ github.token }}
+          VERSION: ${{ inputs.version }}
         run: |
-          gh release create "$GITHUB_REF_NAME" dist/survix-android.apk \
-            --title "Survix $GITHUB_REF_NAME" \
-            --generate-notes \
-            --verify-tag
+          if [ "$GITHUB_REF_TYPE" = tag ]; then
+            # The tag was pushed: publish it as it is.
+            gh release create "$GITHUB_REF_NAME" dist/survix-android.apk \
+              --title "Survix $GITHUB_REF_NAME" \
+              --generate-notes \
+              --verify-tag
+          else
+            # Run by hand: create the tag on the commit that was just built.
+            if ! [[ "$VERSION" =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+              echo "::error::version must look like v1.2.3, got '$VERSION'"
+              exit 1
+            fi
+            gh release create "$VERSION" dist/survix-android.apk \
+              --target "$GITHUB_SHA" \
+              --title "Survix $VERSION" \
+              --generate-notes
+          fi
