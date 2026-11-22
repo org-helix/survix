@@ -46,7 +46,7 @@ object SurveyFiles {
             return@withContext ImportResult.Failed(ImportProblem.Unreadable)
         }
         try {
-            ImportResult.Ok(SurvixFormat.decode(text.removePrefix("﻿")))
+            ImportResult.Ok(SurvixFormat.decode(text.removePrefix("\uFEFF")))
         } catch (e: SurvixFormatException) {
             ImportResult.Failed(ImportProblem.Format(e.error))
         }
